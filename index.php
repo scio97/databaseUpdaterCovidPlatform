@@ -1,7 +1,12 @@
 <?php
 set_time_limit(0);
 include("funzioni.php");
-updateAndamento_nazionale();
-updateAndamento_regionale();
-updateAndamento_provinciale();
 ?>
+
+<html>
+    <p><?php updateAndamento_nazionale(); ?></p>
+
+    <p><?php updateAndamento_regionale(); ?></p>
+
+    <p><?php updateAndamento_provinciale(); ?></p>
+</html>

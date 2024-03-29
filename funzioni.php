@@ -25,6 +25,7 @@ function updateAndamento_nazionale(){
         $stmt = $conn->prepare("INSERT INTO andamento_nazionale (data,ricoverati_con_sintomi,terapia_intensiva,totale_ospedalizzati,isolamento_domiciliare,totale_positivi,variazione_totale_positivi,nuovi_positivi,dimessi_guariti,deceduti,totale_casi,tamponi) VALUES ('$data','$ricoverati_con_sintomi','$terapia_intensiva','$totale_ospedalizzati','$isolamento_domiciliare','$totale_positivi','$variazione_totale_positivi','$nuovi_positivi','$dimessi_guariti','$deceduti','$totale_casi','$tamponi')");
         $stmt->execute();
     }
+    echo "Aggiornamento tabella andamento_nazionale completato correttamente";
 }
 //////////UPDATEANDAMENTO_REGIONALE//////////
 function updateAndamento_regionale(){
@@ -52,6 +53,7 @@ function updateAndamento_regionale(){
         $stmt = $conn->prepare("INSERT INTO andamento_regionale (data,denominazione_regione,ricoverati_con_sintomi,terapia_intensiva,totale_ospedalizzati,isolamento_domiciliare,totale_positivi,variazione_totale_positivi,nuovi_positivi,dimessi_guariti,deceduti,totale_casi,tamponi) VALUES ('$data','$denominazione_regione','$ricoverati_con_sintomi','$terapia_intensiva','$totale_ospedalizzati','$isolamento_domiciliare','$totale_positivi','$variazione_totale_positivi','$nuovi_positivi','$dimessi_guariti','$deceduti','$totale_casi','$tamponi')");
         $stmt->execute();
     }
+    echo "Aggiornamento tabella andamento_regionale completato correttamente";
 }
 //////////UPDATEANDAMENTO_PROVINCIALE//////////
 function updateAndamento_provinciale(){
@@ -70,5 +72,6 @@ function updateAndamento_provinciale(){
         $stmt = $conn->prepare("INSERT INTO andamento_provinciale (data,denominazione_regione,denominazione_provincia,totale_casi) VALUES ('$data','$denominazione_regione','$denominazione_provincia','$totale_casi')");
         $stmt->execute();
     }
+    echo "Aggiornamento tabella andamento_provinciale completato correttamente";
 }
 ?>
