@@ -1,6 +1,7 @@
 # DATABASE UPDATER COVID PLATFORM
 
 Il progetto si occupa di aggiornare il database mysql importando i dati dalla repository ufficiale della protezione civile (https://github.com/pcm-dpc/COVID-19).
+
 Questi dati vengono poi elaborati e mostrati dagli altri due progeti presenti rispettivamente nelle repository apiCovidPlatform e clientCovidPlatform.
 
 ## INSTALLAZIONE
