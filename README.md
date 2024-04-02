@@ -66,6 +66,18 @@ Per eseguire correttamente il progetto è necessario avere installata sulla macc
     `tipo` int NOT NULL,
     PRIMARY KEY (`user`)
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
+
+  CREATE TABLE `modifiche` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `data_modifica` date DEFAULT NULL,
+  `data` date DEFAULT NULL,
+  `luogo` varchar(45) DEFAULT NULL,
+  `chiave` varchar(45) DEFAULT NULL,
+  `valore_vecchio` varchar(45) DEFAULT NULL,
+  `valore_nuovo` varchar(45) DEFAULT NULL,
+  `user_fk` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
   ```
 
 * Modifica dei dati di accesso al database all'interno del file 'connessione.php':
