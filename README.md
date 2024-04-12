@@ -4,6 +4,10 @@ Il progetto si occupa di aggiornare il database mysql importando i dati dalla re
 
 Questi dati vengono poi elaborati e mostrati dagli altri due progeti presenti rispettivamente nelle repository apiCovidPlatform e clientCovidPlatform.
 
+### TECNOLOGIE IMPLEMENTATE
+
+Il progetto è stato sviluppato utilizzando le seguenti tecnologie: PHP, SQL
+
 ## INSTALLAZIONE
 
 Per eseguire correttamente il progetto è necessario avere installata sulla macchina una versione recente di PHP, è inoltre necessario eseguire i seguenti passaggi:
